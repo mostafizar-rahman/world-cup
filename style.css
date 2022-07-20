@@ -1,0 +1,371 @@
+/* ----------------- Font Poppins ----------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300&display=swap');
+
+
+/* ----------------- Commone Code ---------------- */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 1321px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.mt {
+    margin-top: 130px;
+}
+
+/* ----------------------
+Banner Area Start
+------------------------ */
+.banner {
+    background-color: #000000;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    /* grid-template-columns: repeat(2, 1fr); */
+    padding: 0 90px;
+}
+
+.banner_info {
+    width: 531px;
+    /* width: 100%; */
+
+}
+
+.banner_info h1 {
+    font-size: 70px;
+    color: #FFFFFF;
+    line-height: 80px;
+    font-size: 700;
+}
+
+.banner_info p {
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+}
+
+.banner_info .live_btn {
+    background-color: #DD0000;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 187px;
+    height: 56px;
+    font-size: 20px;
+    line-height: 23px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.banner_info .live_btn i {
+    margin-left: 10px;
+    margin-top: 4px;
+    transition: transform 0.5s;
+}
+
+.banner_info .live_btn:hover i {
+    /* margin-left: 15px; */
+    transform: translate(10px);
+}
+
+.banner_thumbnail {
+    max-width: 581px;
+    width: 100%;
+    height: 631px;
+}
+
+.banner_thumbnail img {
+    width: 100%;
+    height: 100%;
+}
+
+/* ----------------------
+Banner Area End
+------------------------ */
+
+/* ----------------------
+Blog Area Start
+------------------------- */
+.bloges_area {
+    display: grid;
+    grid-template-columns: 25% 70%;
+    grid-column-gap: 20px;
+}
+
+.side_bar {
+    /* width: 312px; */
+    height: 312px;
+    background-color: #000000;
+    border-radius: 10px;
+    padding: 15px 30px;
+}
+
+.side_bar ul {
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.side_bar ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 252px;
+    height: 64px;
+    background-color: #FFFFFF;
+    text-decoration: none;
+    color: #000000;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    border-radius: 7px;
+    border: 1px solid #e6e6e6;
+}
+
+.side_bar .active {
+    background-color: #DD0000;
+    color: #FFFFFF;
+}
+
+.bloges {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+    justify-items: center;
+}
+
+.blog {
+    width: 312px;
+    height: 362px;
+    box-shadow: 0px 0px 5px 1px #4242423b;
+    border-radius: 10px;
+}
+
+.blog .info .thumbnail img {
+    width: 100%;
+    height: 172px;
+}
+
+.blog .info {
+    padding: 0 15px;
+}
+
+.blog .info .transfer_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 32px;
+    text-decoration: none;
+    color: #000000;
+    border: 1px solid #000000;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+.blog .info b {
+    font-size: 18xp;
+    line-height: 27px;
+}
+
+.blog .info ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.blog .info ul li {
+    color: #161616B2;
+    font-size: 16px;
+    font-weight: 400;
+
+}
+
+.blog .info ul li span {
+    margin-left: 10px;
+}
+
+.blog .info ul li .fa-comment-dots {
+    margin-left: 30px;
+}
+
+/* ----------------------
+Blog Area End
+------------------------- */
+
+/*-----------------------
+ Match Area Start 
+ -------------------------*/
+.match_area {
+    display: grid;
+    grid-template-columns: 25% 70%;
+    grid-column-gap: 20px;
+}
+
+.matches {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+    justify-items: center;
+}
+
+.match {
+    width: 312px;
+    box-shadow: 0px 0px 5px 1px #4242423b;
+    border-radius: 10px;
+    padding: 30px 00px;
+}
+
+.match_flag {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.match_info .title {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.match_info .time {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+}
+
+/*-----------------------
+ Match Area End 
+ -------------------------*/
+
+/*--------------- Footer-------------- */
+footer {
+    background-color: #000000;
+}
+
+footer .logo h3 {
+    color: #FFFFFF;
+    text-align: center;
+    padding-top: 130px;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+footer hr {
+    max-width: 1320px;
+    margin: 50px auto;
+}
+
+footer .socal_icon {
+    padding-bottom: 130px;
+}
+
+footer .menu ul,
+.socal_icon ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+footer .menu ul li a,
+.socal_icon ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 0 20px;
+    line-height: 50px;
+}
+
+/* ------------------- Media Query------------ */
+
+/* ------------------
+Tablat Divise
+--------------------- */
+
+@media (max-width: 992px) {
+    .banner_info h1 {
+        font-size: 50px;
+        line-height: 60px;
+    }
+
+    .match_area {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .side_bar ul {
+        flex-direction: row;
+        margin-bottom: 30px;
+    }
+
+    .side_bar {
+        height: auto;
+        background-color: transparent;
+    }
+
+    .side_bar ul li a {
+        width: 220px;
+    }
+
+    .bloges_area {
+        grid-template-columns: 100%;
+    }
+
+    .bloges,
+    .matches {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ----------------------
+Mobile Divise
+------------------------ */
+@media(max-width:768px) {
+    .banner {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .banner_info {
+        width: 100%;
+        text-align: center;
+    }
+
+    .banner_info .live_btn {
+        margin: 0 auto;
+    }
+
+    .side_bar ul {
+        flex-direction: column;
+    }
+
+    .bloges,
+    .matches {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    footer .menu ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
